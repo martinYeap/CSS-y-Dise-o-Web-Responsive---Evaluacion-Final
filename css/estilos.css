@@ -33,6 +33,9 @@ header {
   width: 100%;
   padding: 1em;
   background: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -45,9 +48,7 @@ header {
       text-transform: capitalize;
       text-shadow: 2px 2px #02010a;
       display: inline-flex;;
-      border-radius: 10px 10px 0px 0px;
-      -moz-border-radius: 10px 10px 0px 0px;
-      -webkit-border-radius: 10px 10px 0px 0px;
+
     }
 
     header > nav {
@@ -132,12 +133,14 @@ header {
 
   #contenido > .imagenSecundaria > .enlace-paisajes > img:hover{
     transform: rotate(10deg);
+    transition: .8s;
     box-shadow: 2px 2px 5px #82c3a6;
     border: 2px solid black;
   }
 
   #contenido > .imagenSecundaria > .enlace-retratos > img:hover{
     transform: translate(20px, -5px);
+    transition: .5s;
     box-shadow: 2px 2px 5px #82c3a6;
     border: 2px solid black;
   }
@@ -155,6 +158,20 @@ header {
     padding: 2em;
     box-sizing: border-box;
     }
+
+footer {
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  background: #C6d5c5;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
 
 @media (min-width: 768px) {
 
@@ -178,9 +195,15 @@ header {
 
   #contenido img {
     height: 100%;
-    }
-}
+  }
 
-@media (min-width: 1024px) {
+  footer {
+    flex-flow: row;
+  }
+
+  footer > div[class^='foot']{
+      padding: 1em;
+      flex-grow: 1 1 25%;
+  }
 
 }
