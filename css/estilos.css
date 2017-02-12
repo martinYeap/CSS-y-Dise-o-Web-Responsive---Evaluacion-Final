@@ -1,0 +1,40 @@
+body {
+
+}
+
+a{
+  text-decoration: none;
+}
+
+header {
+  background: #5b7989;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+header > h1 {
+  color: white;
+  text-transform: capitalize;
+  text-shadow: 2px 2px #02010a;
+  display: inline-flex;;
+  float: left;
+  border-radius: 10px 10px 0px 0px;
+}
+
+header > nav {
+  display: inline-flex;
+  float: right;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
