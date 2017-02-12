@@ -21,10 +21,14 @@ a:visited{
 
 /* CABECERA */
 header {
-  background: #5b7989;
+  width: 100%;
   padding: 1em;
+  background: #5b7989;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
     header > h1 {
@@ -32,7 +36,6 @@ header {
       text-transform: capitalize;
       text-shadow: 2px 2px #02010a;
       display: inline-flex;;
-      float: left;
       border-radius: 10px 10px 0px 0px;
       -moz-border-radius: 10px 10px 0px 0px;
       -webkit-border-radius: 10px 10px 0px 0px;
@@ -40,7 +43,6 @@ header {
 
     header > nav {
       display: inline-flex;
-      float: right;
     }
 
     header > nav > ul {
@@ -48,7 +50,6 @@ header {
     }
 
     header > nav > ul > li{
-      margin: 0.2em;
       padding: 0.2em 2em;
       background: linear-gradient(to bottom, black 0%,#687a84 100%);
       box-shadow: 3px 5px 10px 0 rgb(200, 199, 188);
@@ -62,6 +63,40 @@ header {
       color: #000;
       font-style: italic;
     }
+
+/* CONTENIDO */
+
+#contenido{
+  width: 100%;
+  margin: auto 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+#contenido > .imagenCentral {
+  width: 100%;
+  background: #82c3a6;
+  justify-content: center;
+}
+
+
+#contenido > .imagenCentral > figure > img {
+  margin: auto;
+  display: block;
+  width: 80%;
+  }
+
+#contenido > .imagenCentral > figure > figcaption{
+    margin: auto;
+    display: block;
+    width: 80%;
+    position: relative;
+    background-color: #ccc;
+    bottom: 6vh;
+  }
 
 @media (min-width: 768px) {
 
