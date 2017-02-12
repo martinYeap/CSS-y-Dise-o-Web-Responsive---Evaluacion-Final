@@ -1,11 +1,25 @@
+/* ESTILOS GENERALES */
 body {
 
 }
 
 a{
   text-decoration: none;
+  padding: 0.2em;
+  display: block;
 }
 
+a:link{
+  color: #bebebe;
+  text-align: right;
+  font-weight: bold;
+}
+
+a:visited{
+  color: rgb(189, 46, 20);
+}
+
+/* CABECERA */
 header {
   background: #5b7989;
   padding: 1em;
@@ -13,19 +27,41 @@ header {
   justify-content: space-between;
 }
 
-header > h1 {
-  color: white;
-  text-transform: capitalize;
-  text-shadow: 2px 2px #02010a;
-  display: inline-flex;;
-  float: left;
-  border-radius: 10px 10px 0px 0px;
-}
+    header > h1 {
+      color: white;
+      text-transform: capitalize;
+      text-shadow: 2px 2px #02010a;
+      display: inline-flex;;
+      float: left;
+      border-radius: 10px 10px 0px 0px;
+      -moz-border-radius: 10px 10px 0px 0px;
+      -webkit-border-radius: 10px 10px 0px 0px;
+    }
 
-header > nav {
-  display: inline-flex;
-  float: right;
-}
+    header > nav {
+      display: inline-flex;
+      float: right;
+    }
+
+    header > nav > ul {
+      list-style: none;
+    }
+
+    header > nav > ul > li{
+      margin: 0.2em;
+      padding: 0.2em 2em;
+      background: linear-gradient(to bottom, black 0%,#687a84 100%);
+      box-shadow: 3px 5px 10px 0 rgb(200, 199, 188);
+      border-radius: 15px;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15px;
+    }
+
+    header > nav > ul > li:hover{
+      background: white;
+      color: #000;
+      font-style: italic;
+    }
 
 @media (min-width: 768px) {
 
