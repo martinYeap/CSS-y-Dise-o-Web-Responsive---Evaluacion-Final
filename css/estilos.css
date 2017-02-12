@@ -19,6 +19,15 @@ a:visited{
   color: rgb(189, 46, 20);
 }
 
+ul {
+     margin: 0px;
+     padding: 0px;
+}
+li {
+     margin: 0px;
+     padding: 0px;
+}
+
 /* CABECERA */
 header {
   width: 100%;
@@ -98,14 +107,80 @@ header {
     bottom: 6vh;
   }
 
+
+  #contenido > .imagenSecundaria {
+    width: 100%;
+    background: #d5c75f;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    flex: 1 1 90%;
+  }
+
+#contenido > .imagenSecundaria > div[class^='enlace']{
+    padding: 1em 2em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #contenido > .imagenSecundaria img {
+    margin: auto;
+    display: block;
+    width: 80%;
+  }
+
+  #contenido > .imagenSecundaria > .enlace-paisajes > img:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 5px #82c3a6;
+    border: 2px solid black;
+  }
+
+  #contenido > .imagenSecundaria > .enlace-retratos > img:hover{
+    transform: translate(20px, -5px);
+    box-shadow: 2px 2px 5px #82c3a6;
+    border: 2px solid black;
+  }
+
+  #contenido ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #contenido ul li{
+    width: 100%;
+    display: block;
+    padding: 2em;
+    box-sizing: border-box;
+    }
+
 @media (min-width: 768px) {
 
+  #contenido > .imagenSecundaria {
+    flex-flow: row;
+    flex: 1 1 40%;
+  }
+
+  #contenido > .imagenSecundaria img {
+    height: 100%;
+  }
+
+  #contenido ul {
+    flex-direction: row;
+  }
+
+  #contenido ul li{
+    padding: 2em 2em;
+    flex: 1 1 40%;
+  }
+
+  #contenido img {
+    height: 100%;
+    }
 }
 
 @media (min-width: 1024px) {
-
-}
-
-@media (min-width: 1200px) {
 
 }
